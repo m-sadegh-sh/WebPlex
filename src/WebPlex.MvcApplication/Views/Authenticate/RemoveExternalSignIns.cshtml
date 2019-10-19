@@ -1,0 +1,22 @@
+﻿@model ICollection<ExternalLoginModel>
+
+@if (Model.Count > 0) {
+	<h3>Registered external logins</h3>
+	<table>
+		<tbody>
+			@foreach (var externalLogin in Model) {
+				<tr>
+					<td>@externalLogin.ProviderDisplayName</td>
+					<td>
+						@if (ViewBag.ShowRemoveButton) {
+							using (Html.BeginForm(T4Routes.Authenticate.Disassociate(externalLogin.Provider, externalLogin.ProviderUserKey, (string) ViewBag.ReturnUrl), FormMethod.Post)) {
+								@Html.AntiForgeryToken()
+								@Html.Action(T4Routes.Components.Button(Html.Button().Primary.Small.Submit.Text(externalLogin.ProviderDisplayName)))
+							}
+						}
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+}

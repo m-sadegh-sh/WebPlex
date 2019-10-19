@@ -1,0 +1,34 @@
+﻿@model SignInModel
+
+@{
+	Layout = T4Routes.Shared.Views._EmptyLayout;
+	Title.Add(Views.Title_SignIn);
+}
+
+@Html.ValidationSummary(true)
+
+<div class="lightbox">
+	<h2 class="lightbox-heading">@Views.Subtitle_SignIn</h2>
+	@Html.Action(T4Routes.Authenticate.ExternalSignIns((string) ViewBag.ReturnUrl))
+	<div class="horizontal-line text-center muted">
+		<h2>
+			@Views.Literal_SignIn_Or
+		</h2>
+		<span></span>
+	</div>
+	@using (Html.BeginForm(T4Routes.Authenticate.SignIn((string) ViewBag.ReturnUrl), FormMethod.Post, new {
+			@class = "sign-in"
+	})) {
+		@Html.AntiForgeryToken()
+		<div class="control-groups">
+			@Html.EditorFor(si => si.Email)
+			@Html.EditorFor(si => si.Password)
+			@Html.EditorFor(si => si.RememberMe)
+		</div>
+		<div class="form-actions">
+			@Html.Action(T4Routes.Components.Button(Html.Button().Primary.Large.Submit.Text(Views.Commands_SignIn)))
+			@Html.Action(T4Routes.Components.Anchor(Html.Anchor().Large.Text(Views.Commands_BackToHome).Result(T4Routes.Home.Index())))
+		</div>
+	}
+
+</div>

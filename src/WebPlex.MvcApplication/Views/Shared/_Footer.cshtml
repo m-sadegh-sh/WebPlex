@@ -1,0 +1,10 @@
+﻿<p class="muted credit pull-left">
+	@Views.Literal_Version @CurrentBuild.CurrentVersion
+</p>
+<p class="muted credit pull-right">
+	&copy; @DateTimeHelper.CurrentUserDateTime.Year @Views.Literal_Product &middot; 
+	@Html.ActionLink(Views.Title_Home, T4Routes.Home.Index()) &middot; 
+	@Html.ActionLink(Views.Title_Blog, T4Routes.Blog.Index()) &middot; 
+	@Html.ActionLink(Views.Title_About, T4Routes.Home.About()) &middot; 
+	@Html.ActionLink(Views.Title_Contact, T4Routes.Home.Contact())
+</p>

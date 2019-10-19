@@ -1,0 +1,20 @@
+﻿@model BreadcrumbComponent
+
+@helper RenderItem(AnchorComponent item, bool isLast) {
+	if (!isLast) {
+		<li>
+			@Html.ActionLink(item.Text, item.Result)
+			<span class="divider">/</span>
+		</li>
+	} else {
+		<li class="active">
+			@item.Text
+		</li>
+	}
+}
+
+<ul @Model.WriteAttributes()>
+	@for (var i = Model.Items.Count - 1; i >= 0; i--) {
+		@RenderItem(Model.Items[i], i == 0)
+	}
+</ul>

@@ -1,0 +1,15 @@
+﻿@model TitleComponent
+
+@helper RenderItem(string part, bool isLast) {
+	@HttpUtility.HtmlEncode(part)
+
+	if (!isLast) {
+		@Application.TitleSeparator
+	}
+}
+
+<title>
+	@for (var i = 0; i < Model.Count; i++) {
+		@RenderItem(Model[i], i == Model.Count - 1)
+	}
+</title>

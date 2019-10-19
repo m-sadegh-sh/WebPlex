@@ -1,0 +1,15 @@
+﻿@{
+	Layout = T4Routes.Shared.Views._LayoutBase;
+}
+
+<div class="container lightbox-container">
+	@RenderBody()
+</div>
+
+@section Styles {
+	@RenderSection("Styles", false)
+}
+
+@section Scripts {
+	@RenderSection("Scripts", false)
+}

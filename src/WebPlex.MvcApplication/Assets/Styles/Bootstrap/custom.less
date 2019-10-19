@@ -1,0 +1,171 @@
+.font(@fontFamily, @fontPathWithoutExtension) {
+	font-family: @fontFamily;
+	src: url('@{fontPathWithoutExtension}.eot');
+    src: url('@{fontPathWithoutExtension}.eot?#iefix') format('embedded-opentype'),
+         url('@{fontPathWithoutExtension}.woff') format('woff'),
+         url('@{fontPathWithoutExtension}.ttf') format('truetype')
+}
+
+@font-face {
+    .font('Yekan', '/Assets/Fonts/Yekan');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    .font('Titr', '/Assets/Fonts/Titr');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    .font('Farnaz', '/Assets/Fonts/Farnaz');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    .font('Koodak', '/Assets/Fonts/Koodak');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    .font('Mehr', '/Assets/Fonts/Mehr');
+    font-weight: normal;
+    font-style: normal;
+}
+
+::selection {
+    background: rgba(4, 50, 100, .2)
+}
+
+::-moz-selection {
+    background: rgba(4, 50, 100, .2)
+}
+
+input::selection, textarea::selection {
+    background: rgba(197, 196, 196, 0.4);
+}
+
+input::-moz-selection, textarea::-moz-selection {
+    background: rgba(197, 196, 196, 0.6);
+}
+
+body {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #f5f5f5;
+	direction: rtl;
+	font-family: @baseFontFamily;
+	text-align: right;
+	min-width: 400px;
+}
+
+#footer {
+	.clearfix();
+}
+
+.public-area {
+	max-width: 1000px;
+
+	.navbar {	
+		.navbar-inner {
+			padding: 0;		
+		}
+	}
+}
+
+.lightbox-container {
+	margin-top: 60px;
+
+	.lightbox {
+		max-width: 400px;
+		padding: 19px 29px 0 29px;
+		margin: 0 auto 20px;
+		background-color: #fff;
+		border: 1px solid #e5e5e5;
+		.border-radius(5px);
+		.box-shadow(0 1px 2px rgba(0, 0, 0 ,.05));
+
+		.lightbox-heading {
+			padding: 8px 20px 10px 20px;
+			margin: -20px -30px 30px 0;
+			background-color: whiteSmoke;
+			border: 1px solid #E5E5E5;
+			color: #9DA0A4;
+			.border-radius(0 5px);
+			display: inline-block;
+		}
+
+		.checkbox {
+			label {
+				margin-bottom: 0;
+			}
+		}
+
+		input[type="text"], input[type="password"] {
+			font-size: 16px;
+			height: auto;
+			padding: 7px 9px;
+		}
+
+		.form-actions {
+			margin: 24px -29px 0;
+		}
+
+		.external-sign-in {
+			margin-top: 0;
+			border-top: 1px solid #E5E5E5;
+			border-bottom: 1px solid #E5E5E5;
+		}
+
+		.sign-in {
+			margin-bottom: 0;
+		}
+
+		.horizontal-line {
+			display: block;
+			
+			h2 {
+				margin: 24px 0 14px 0;
+				position: relative;
+				padding: 0 10px;
+				background: #FFF;
+				display: inline-block;
+				z-index: 1;
+			}
+
+			span {
+				border-top: 1px solid #D9D9D9;
+				display: block;
+				position: relative;
+				top: -36px;
+			}
+		}
+	}
+}
+
+.control-groups .control-group:last-child {
+	margin-bottom: 0;
+}
+
+.jumbotron {
+	margin: 80px 0;
+	text-align: center;
+
+	h1 {
+		font-size: 80px;
+		line-height: 1.5;
+	}
+
+	.lead {
+		font-size: 24px;
+		line-height: 1.25;
+	}
+
+	.btn {
+		font-size: 21px;
+		padding: 14px 24px;
+	}
+}

@@ -1,0 +1,19 @@
+﻿@{
+	Navbar.Items(items => {
+		             items.Add.Text("حساب کاربری").SubItems(subItems => {
+			                                                    if (Request.IsAuthenticated) {
+				                                                    subItems.Add.Text("تغییر اسم شب").Result(T4Routes.Authenticate.ChangePassword());
+				                                                    subItems.Add.Text("خروج").Result(T4Routes.Authenticate.SignOut());
+			                                                    } else {
+				                                                    subItems.Add.Text("ورود").Result(T4Routes.Authenticate.SignIn());
+				                                                    subItems.Add.Text("دریافت اسم شب").Result(T4Routes.Authenticate.ResetPassword());
+			                                                    }
+		                                                    });
+
+		             if (Request.IsAuthenticated) {
+			             items.Add.Text("درج تنظیمات").Result(T4Routes.Admin.Configuration.EnsureDefaultSettings());
+		             }
+	             });
+}
+
+@Html.Action(T4Routes.Components.Navbar(Navbar))

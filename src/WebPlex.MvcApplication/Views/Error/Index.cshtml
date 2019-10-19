@@ -1,0 +1,15 @@
+﻿@model ErrorModel
+
+@{
+	Layout = T4Routes.Shared.Views._EmptyLayout;
+	Title.Add(Model.Heading);
+}
+
+<div class="lightbox">
+	<h2 class="lightbox-heading">@Model.ErrorNum</h2>
+	<p>@Model.Message</p>
+	<div class="form-actions">
+		@Html.Action(T4Routes.Components.Anchor(Html.Anchor().Primary.Large.Text(Views.Commands_BackToHome).Result(T4Routes.Home.Index())))
+		@Html.Action(T4Routes.Components.Anchor(Html.Anchor().Large.Text(Views.Title_Contact).Result(T4Routes.Home.Contact())))
+	</div>
+</div>

@@ -1,0 +1,10 @@
+﻿@model ICollection<AuthenticationClientData>
+
+@using (Html.BeginForm(T4Routes.Authenticate.ExternalSignIn(null, (string) ViewBag.ReturnUrl), FormMethod.Post, new {
+		@class = "form-actions text-center external-sign-in"
+})) {
+	@Html.AntiForgeryToken()
+	foreach (var clientData in Model) {
+		@Html.Action(T4Routes.Components.Button(Html.Button().Info.Small.Submit.Name("providerKey").Text(clientData.DisplayName).Value(clientData.AuthenticationClient.ProviderName)))
+	}
+}

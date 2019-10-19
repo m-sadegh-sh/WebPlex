@@ -1,0 +1,13 @@
+﻿@model AlertComponent
+
+@helper RenderItem(AlertComponent item) {
+	<div @item.WriteAttributes()>
+		<button type="button" class="close" data-dismiss="alert">&times;</button>
+		@if (!string.IsNullOrEmpty(item.Title)) {
+			<strong>@item.Title </strong>
+		}
+		@item.Message
+	</div>
+}
+
+@RenderItem(Model)

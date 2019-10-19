@@ -1,0 +1,22 @@
+﻿@model SignUpModel
+
+@{
+	Layout = T4Routes.Shared.Views._EmptyLayout;
+	Title.Add(Views.Title_SignUp);
+}
+
+@Html.ValidationSummary(true)
+
+@using (Html.BeginForm(T4Routes.Authenticate.SignUp((string) ViewBag.ReturnUrl), FormMethod.Post, new {
+		@class = "lightbox"
+})) {
+	@Html.AntiForgeryToken()
+	<h2 class="lightbox-heading">@Views.Title_SignUp</h2>
+	@Html.EditorFor(su => su.Email)
+	@Html.EditorFor(su => su.Password)
+	@Html.EditorFor(su => su.PasswordConfirmation)
+	<div class="form-actions">
+		@Html.Action(T4Routes.Components.Button(Html.Button().Primary.Large.Submit.Text(Views.Commands_SignUp)))
+		@Html.Action(T4Routes.Components.Anchor(Html.Anchor().Large.Text(Views.Commands_BackToHome).Result(T4Routes.Home.Index())))
+	</div>
+}

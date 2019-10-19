@@ -1,0 +1,21 @@
+﻿@{
+	Navbar.Items(items => {
+		             items.Add.Text(Views.Title_Home).Result(T4Routes.Home.Index());
+		             items.Add.Text(Views.Title_Blog).Result(T4Routes.Blog.Index());
+		             items.Add.Text(Views.Title_About).Result(T4Routes.Home.About());
+		             items.Add.Text(Views.Title_Contact).Result(T4Routes.Home.Contact());
+
+		             items.Add.Text(Views.Literal_UserAccount).SubItems(subItems => {
+			                                                                if (Request.IsAuthenticated) {
+				                                                                subItems.Add.Text(Views.Title_Dashboard).Result(T4Routes.Admin.Dashboard.Index());
+				                                                                subItems.Add.Text(Views.Title_ChangePassword).Result(T4Routes.Authenticate.SetOrChangePassword());
+				                                                                subItems.Add.Text(Views.Title_SignOut).Result(T4Routes.Authenticate.SignOut());
+			                                                                } else {
+				                                                                subItems.Add.Text(Views.Title_SignIn).Result(T4Routes.Authenticate.SignIn(Url.Encode(Request.RawUrl + "^&sadegh=شاد")));
+				                                                                subItems.Add.Text(Views.Title_ResetPassword).Result(T4Routes.Authenticate.ResetPassword(Request.RawUrl + "^&sadegh=شاد"));
+			                                                                }
+		                                                                });
+	             });
+}
+
+@Html.Action(T4Routes.Components.Navbar(Navbar))

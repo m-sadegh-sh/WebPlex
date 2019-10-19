@@ -1,0 +1,23 @@
+﻿@{
+	Layout = T4Routes.Shared.Views._LayoutBase;
+	Breadcrumb.Items(items => items.Add.Text("وب‌پلکس").Result(T4Routes.Home.Index()));
+}
+
+<div class="container">
+	@Html.Partial(T4Routes.Admin.Shared.Views._Content_Navbar)
+	@Html.Partial(T4Routes.Shared.Views._Content_Alerts)
+	@Html.Partial(T4Routes.Shared.Views._Content_Breadcrumb)
+	@RenderBody()
+	<hr>
+	<div id="footer">
+		@Html.Partial(T4Routes.Shared.Views._Footer)
+	</div>
+</div>
+
+@section Styles {
+	@RenderSection("Styles", false)
+}
+
+@section Scripts {
+	@RenderSection("Scripts", false)
+}

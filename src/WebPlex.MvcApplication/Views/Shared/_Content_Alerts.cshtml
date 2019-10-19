@@ -1,0 +1,69 @@
+﻿@{
+	var alertGroup = Html.AlertGroup();
+
+	if (TempData["alerts.warning"] != null) {
+		alertGroup.Alerts(s => {
+			                  foreach (var message in (IList<string>) TempData["alerts.warning"]) {
+				                  s.Add.Message(message);
+			                  }
+		                  });
+	}
+
+	if (ViewData["alerts.warning"] != null) {
+		alertGroup.Alerts(s => {
+			                  foreach (var message in (IList<string>) ViewData["alerts.warning"]) {
+				                  s.Add.Message(message);
+			                  }
+		                  });
+	}
+
+	if (TempData["alerts.error"] != null) {
+		alertGroup.Alerts(s => {
+			                  foreach (var message in (IList<string>) TempData["alerts.error"]) {
+				                  s.Add.Error.Message(message);
+			                  }
+		                  });
+	}
+
+	if (ViewData["alerts.error"] != null) {
+		alertGroup.Alerts(s => {
+			                  foreach (var message in (IList<string>) ViewData["alerts.error"]) {
+				                  s.Add.Error.Message(message);
+			                  }
+		                  });
+	}
+
+	if (TempData["alerts.success"] != null) {
+		alertGroup.Alerts(s => {
+			                  foreach (var message in (IList<string>) TempData["alerts.success"]) {
+				                  s.Add.Success.Message(message);
+			                  }
+		                  });
+	}
+
+	if (ViewData["alerts.success"] != null) {
+		alertGroup.Alerts(s => {
+			                  foreach (var message in (IList<string>) ViewData["alerts.success"]) {
+				                  s.Add.Success.Message(message);
+			                  }
+		                  });
+	}
+
+	if (TempData["alerts.info"] != null) {
+		alertGroup.Alerts(s => {
+			                  foreach (var message in (IList<string>) TempData["alerts.info"]) {
+				                  s.Add.Info.Message(message);
+			                  }
+		                  });
+	}
+
+	if (ViewData["alerts.info"] != null) {
+		alertGroup.Alerts(s => {
+			                  foreach (var message in (IList<string>) ViewData["alerts.info"]) {
+				                  s.Add.Info.Message(message);
+			                  }
+		                  });
+	}
+}
+
+@Html.Action(T4Routes.Components.AlertGroup(alertGroup))

@@ -1,0 +1,13 @@
+﻿@model AnchorComponent
+
+@helper RenderItem(AnchorComponent item) {
+	if (item.Result != null) {
+		@Html.ActionLink(item.Text, item.Result, item.Attributes)
+	} else {
+		<a @item.WriteAttributes()>
+			@item.Text
+		</a>
+	}
+}
+
+@RenderItem(Model)

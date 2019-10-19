@@ -1,0 +1,25 @@
+﻿@{
+	Title.Add(Views.Literal_Product);
+}
+
+<!DOCTYPE html>
+<html lang="@WorkContext.CurrentCulture">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		@Html.Action(T4Routes.Components.Title(Title))
+		@Html.Action(T4Routes.Components.Keywords(Keywords))
+		@Html.Action(T4Routes.Components.Description(Description))
+		<meta name="author" content="@CurrentBuild.Company">
+		<meta name="generator" content="@CurrentBuild.Trademark v@(CurrentBuild.CurrentVersion)">
+		<link href="@Url.Action(T4Routes.Feed.Index())" rel="alternate" type="application/rss+xml" />
+		<link rel="shortcut icon" href="@Assets.Images.favicon_png">
+		@Html.Partial(T4Routes.Shared.Views._Styles)
+		@RenderStyles()
+	</head>
+	<body>
+		@RenderBody()
+		@Html.Partial(T4Routes.Shared.Views._Scripts)
+		@RenderScripts()
+	</body>
+</html>

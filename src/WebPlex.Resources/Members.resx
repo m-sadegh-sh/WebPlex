@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationSettings_AllowUsersToSetLanguage" xml:space="preserve">
+    <value>بذار کاربرامون بتونن زبان رو تغییر بدن.</value>
+  </data>
+  <data name="ApplicationSettings_AllowUsersToSetTimeZone" xml:space="preserve">
+    <value>بذار کاربرامون بتونن ناحیه زمانی رو تغییر بدن.</value>
+  </data>
+  <data name="ApplicationSettings_DefaultLanguage" xml:space="preserve">
+    <value>زبان پیشفرض</value>
+  </data>
+  <data name="ApplicationSettings_DefaultTimeZoneId" xml:space="preserve">
+    <value>ناحیه زمانی پیشفرض</value>
+  </data>
+  <data name="ApplicationSettings_EncryptionKey" xml:space="preserve">
+    <value>کلید رمزنگاری</value>
+  </data>
+  <data name="ApplicationSettings_TitleSeparator" xml:space="preserve">
+    <value>جداکننده عنوان صفحات</value>
+  </data>
+  <data name="AttributeEntityBase_Key" xml:space="preserve">
+    <value>کلید</value>
+  </data>
+  <data name="AttributeEntityBase_Value" xml:space="preserve">
+    <value>مقدار</value>
+  </data>
+  <data name="BannedIpEntity_ExpireDateUtc" xml:space="preserve">
+    <value>تاریخ انقضا</value>
+  </data>
+  <data name="BannedIpEntity_IpAdrress" xml:space="preserve">
+    <value>آدرس آی‌پی</value>
+  </data>
+  <data name="BannedIpEntity_Reason" xml:space="preserve">
+    <value>بدلیل...</value>
+  </data>
+  <data name="BannedIpEntity_StartDateUtc" xml:space="preserve">
+    <value>تاریخ شروع</value>
+  </data>
+  <data name="ChangePasswordModel_CurrentPassword" xml:space="preserve">
+    <value>اسم شب فعلی</value>
+  </data>
+  <data name="ChangePasswordModel_NewPassword" xml:space="preserve">
+    <value>اسم شب جدید</value>
+  </data>
+  <data name="ChangePasswordModel_NewPasswordConfirmation" xml:space="preserve">
+    <value>اسم شب جدید (دوباره)</value>
+  </data>
+  <data name="CloudSettings_BackupFolder" xml:space="preserve">
+    <value>اسم پوشه</value>
+  </data>
+  <data name="CloudSettings_ConsumerKey" xml:space="preserve">
+    <value>کلید اختصاصی</value>
+  </data>
+  <data name="CloudSettings_ConsumerSecret" xml:space="preserve">
+    <value>کد مخفی اختصاصی</value>
+  </data>
+  <data name="CloudSettings_Password" xml:space="preserve">
+    <value>گذرواژه</value>
+  </data>
+  <data name="CloudSettings_UserName" xml:space="preserve">
+    <value>نام کاربری</value>
+  </data>
+  <data name="ContactFormSettings_RecipientName" xml:space="preserve">
+    <value>نام دریافت کننده</value>
+  </data>
+  <data name="ContactFormSettings_Subject" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="ContactModel_Email" xml:space="preserve">
+    <value>رایانامه</value>
+  </data>
+  <data name="ContactModel_Message" xml:space="preserve">
+    <value>پیغام...</value>
+  </data>
+  <data name="ContactModel_Name" xml:space="preserve">
+    <value>اسمتون</value>
+  </data>
+  <data name="EmailAccountEntity_Email" xml:space="preserve">
+    <value>رایانامه</value>
+  </data>
+  <data name="EmailAccountEntity_Host" xml:space="preserve">
+    <value>آدرس میزبان</value>
+  </data>
+  <data name="EmailAccountEntity_InternalKey" xml:space="preserve">
+    <value>کلید داخلی</value>
+  </data>
+  <data name="EmailAccountEntity_IsDefault" xml:space="preserve">
+    <value>به عنوان حساب پیشفرض در نظر بگیر.</value>
+  </data>
+  <data name="EmailAccountEntity_Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="EmailAccountEntity_Password" xml:space="preserve">
+    <value>گذرواژه</value>
+  </data>
+  <data name="EmailAccountEntity_Port" xml:space="preserve">
+    <value>شماره پورت</value>
+  </data>
+  <data name="EmailAccountEntity_SslEnabled" xml:space="preserve">
+    <value>SSL فعال باشه.</value>
+  </data>
+  <data name="EmailAccountEntity_UseDefaultCredentials" xml:space="preserve">
+    <value>از نام کاربری و گذرواژه پیشفرض استفاده کن.</value>
+  </data>
+  <data name="EmailAccountEntity_UserName" xml:space="preserve">
+    <value>نام کاربری</value>
+  </data>
+  <data name="EntityBase_DisplayOrder" xml:space="preserve">
+    <value>ترتیب نمایش</value>
+  </data>
+  <data name="EntityBase_Id" xml:space="preserve">
+    <value>شناسه</value>
+  </data>
+  <data name="EntityBase_IsEnabled" xml:space="preserve">
+    <value>وضعیت فعال</value>
+  </data>
+  <data name="EntityBase_Version" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="LogEntity_FullMessage" xml:space="preserve">
+    <value>پیغام کامل</value>
+  </data>
+  <data name="LogEntity_Invoker" xml:space="preserve">
+    <value>باعث و بانیش</value>
+  </data>
+  <data name="LogEntity_InvokerIp" xml:space="preserve">
+    <value>آدرس آی‌پی (بانی)</value>
+  </data>
+  <data name="LogEntity_LogDateUtc" xml:space="preserve">
+    <value>تاریخ ثبت</value>
+  </data>
+  <data name="LogEntity_ReferrerUrl" xml:space="preserve">
+    <value>آدرس رفرر</value>
+  </data>
+  <data name="LogEntity_RequestUrl" xml:space="preserve">
+    <value>آدرس درخواست</value>
+  </data>
+  <data name="LogEntity_Severity" xml:space="preserve">
+    <value>شدت (نوع)</value>
+  </data>
+  <data name="LogEntity_StackTrace" xml:space="preserve">
+    <value>استک-تریس</value>
+  </data>
+  <data name="LogSeverity_Debug" xml:space="preserve">
+    <value>خطایابی</value>
+  </data>
+  <data name="LogSeverity_Error" xml:space="preserve">
+    <value>خطا</value>
+  </data>
+  <data name="LogSeverity_Fatal" xml:space="preserve">
+    <value>بحرانی</value>
+  </data>
+  <data name="LogSeverity_Information" xml:space="preserve">
+    <value>اطلاعات</value>
+  </data>
+  <data name="LogSeverity_Warning" xml:space="preserve">
+    <value>هشدار</value>
+  </data>
+  <data name="MembershipEntity_AdminComment" xml:space="preserve">
+    <value>کامنت</value>
+  </data>
+  <data name="MembershipEntity_ConfirmationToken" xml:space="preserve">
+    <value>شناسه تائید</value>
+  </data>
+  <data name="MembershipEntity_CreateDateUtc" xml:space="preserve">
+    <value>تاریخ ایجاد</value>
+  </data>
+  <data name="MembershipEntity_IsConfirmed" xml:space="preserve">
+    <value>وضعیت تائید</value>
+  </data>
+  <data name="MembershipEntity_IsLocked" xml:space="preserve">
+    <value>وضعیت مسدود</value>
+  </data>
+  <data name="MembershipEntity_LastActivityDateUtc" xml:space="preserve">
+    <value>تاریخ آخرین فعالیت</value>
+  </data>
+  <data name="MembershipEntity_LastIpAddress" xml:space="preserve">
+    <value>آخرین آدرس آی‌پی</value>
+  </data>
+  <data name="MembershipEntity_LastLockoutDateUtc" xml:space="preserve">
+    <value>تاریخ آخرین قفل شدن</value>
+  </data>
+  <data name="MembershipEntity_LastLoginDateUtc" xml:space="preserve">
+    <value>تاریخ آخرین ورود</value>
+  </data>
+  <data name="MembershipEntity_LastPasswordChangeDateUtc" xml:space="preserve">
+    <value>تاریخ آخرین تغییر گذرواژه</value>
+  </data>
+  <data name="MembershipEntity_LastPasswordFailureDateUtc" xml:space="preserve">
+    <value>تاریخ آخرین گذرواژه اشتباه</value>
+  </data>
+  <data name="MembershipEntity_Password" xml:space="preserve">
+    <value>گذرواژه</value>
+  </data>
+  <data name="MembershipEntity_PasswordFailuresSinceLastSuccess" xml:space="preserve">
+    <value>تعداد تلاش‌های ناموفق</value>
+  </data>
+  <data name="MembershipEntity_PasswordVerificationToken" xml:space="preserve">
+    <value>شناسه تغییر گذرواژه</value>
+  </data>
+  <data name="MembershipEntity_PasswordVerificationTokenExpirationDateUtc" xml:space="preserve">
+    <value>تاریخ انقضای شناسه تغییر گذرواژه</value>
+  </data>
+  <data name="MembershipEntity_User" xml:space="preserve">
+    <value>کاربر</value>
+  </data>
+  <data name="OAuthEntity_ProviderKey" xml:space="preserve">
+    <value>شناسه فراهم‌کننده</value>
+  </data>
+  <data name="OAuthEntity_User" xml:space="preserve">
+    <value>کاربر</value>
+  </data>
+  <data name="OAuthEntity_UserKey" xml:space="preserve">
+    <value>شناسه کاربر</value>
+  </data>
+  <data name="OAuthTokenEntity_Secret" xml:space="preserve">
+    <value>کلید مخفی</value>
+  </data>
+  <data name="OAuthTokenEntity_Token" xml:space="preserve">
+    <value>شناسه</value>
+  </data>
+  <data name="PasswordPersistenceMode_Clear" xml:space="preserve">
+    <value>معمولی</value>
+  </data>
+  <data name="PasswordPersistenceMode_Encrypted" xml:space="preserve">
+    <value>رمزنگاری شده</value>
+  </data>
+  <data name="PasswordPersistenceMode_Hashed" xml:space="preserve">
+    <value>رمزنگاری یک طرفه (پیشنهاد شده)</value>
+  </data>
+  <data name="PermissionEntity_Group" xml:space="preserve">
+    <value>گروه</value>
+  </data>
+  <data name="PermissionEntity_InternalKey" xml:space="preserve">
+    <value>کلید داخلی</value>
+  </data>
+  <data name="PermissionEntity_Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="PermissionEntity_Roles" xml:space="preserve">
+    <value>نقش‌ها</value>
+  </data>
+  <data name="PermissionGroupEntity_InternalKey" xml:space="preserve">
+    <value>کلید داخلی</value>
+  </data>
+  <data name="PermissionGroupEntity_Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="PermissionGroupEntity_Permissions" xml:space="preserve">
+    <value>دسترسی‌ها</value>
+  </data>
+  <data name="PermissionGroupEntity_Roles" xml:space="preserve">
+    <value>نقش‌ها</value>
+  </data>
+  <data name="QueuedMailEntity_Bcc" xml:space="preserve">
+    <value>بی-سی-سی</value>
+  </data>
+  <data name="QueuedMailEntity_Body" xml:space="preserve">
+    <value>متن رایانامه</value>
+  </data>
+  <data name="QueuedMailEntity_Cc" xml:space="preserve">
+    <value>سی-سی</value>
+  </data>
+  <data name="QueuedMailEntity_FromEmail" xml:space="preserve">
+    <value>رایانامه فرستنده</value>
+  </data>
+  <data name="QueuedMailEntity_FromName" xml:space="preserve">
+    <value>نام فرستنده</value>
+  </data>
+  <data name="QueuedMailEntity_Importance" xml:space="preserve">
+    <value>اهمیت</value>
+  </data>
+  <data name="QueuedMailEntity_IsBodyHtml" xml:space="preserve">
+    <value>به عنوان متن HTML در نظر بگیر.</value>
+  </data>
+  <data name="QueuedMailEntity_SendTries" xml:space="preserve">
+    <value>دفعات تلاش برای ارسال</value>
+  </data>
+  <data name="QueuedMailEntity_SentDateUtc" xml:space="preserve">
+    <value>تاریخ ارسال</value>
+  </data>
+  <data name="QueuedMailEntity_Subject" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="QueuedMailEntity_ToEmail" xml:space="preserve">
+    <value>رایانامه گیرنده</value>
+  </data>
+  <data name="QueuedMailEntity_ToName" xml:space="preserve">
+    <value>نام گیرنده</value>
+  </data>
+  <data name="QueuedMailImportance_Critical" xml:space="preserve">
+    <value>بحرانی</value>
+  </data>
+  <data name="QueuedMailImportance_High" xml:space="preserve">
+    <value>زیاد</value>
+  </data>
+  <data name="QueuedMailImportance_Low" xml:space="preserve">
+    <value>کم</value>
+  </data>
+  <data name="QueuedMailImportance_Normal" xml:space="preserve">
+    <value>معمولی</value>
+  </data>
+  <data name="ResetPasswordModel_Email" xml:space="preserve">
+    <value>رایانامه</value>
+  </data>
+  <data name="RoleEntity_Groups" xml:space="preserve">
+    <value>گروه‌ها</value>
+  </data>
+  <data name="RoleEntity_InternalKey" xml:space="preserve">
+    <value>کلید داخلی</value>
+  </data>
+  <data name="RoleEntity_Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="RoleEntity_Permissions" xml:space="preserve">
+    <value>دسترسی‌ها</value>
+  </data>
+  <data name="RoleEntity_Users" xml:space="preserve">
+    <value>کاربران</value>
+  </data>
+  <data name="ScheduleTaskImportance_High" xml:space="preserve">
+    <value>زیاد</value>
+  </data>
+  <data name="ScheduleTaskImportance_Low" xml:space="preserve">
+    <value>کم</value>
+  </data>
+  <data name="ScheduleTaskImportance_Normal" xml:space="preserve">
+    <value>معمولی</value>
+  </data>
+  <data name="SettingEntity_Key" xml:space="preserve">
+    <value>کلید</value>
+  </data>
+  <data name="SettingEntity_Value" xml:space="preserve">
+    <value>مقدار</value>
+  </data>
+  <data name="SignInModel_Email" xml:space="preserve">
+    <value>رایانامه</value>
+  </data>
+  <data name="SignInModel_Password" xml:space="preserve">
+    <value>اسم شب</value>
+  </data>
+  <data name="SignInModel_RememberMe" xml:space="preserve">
+    <value>دیگه ازم نپرس!</value>
+  </data>
+  <data name="SignUpModel_Email" xml:space="preserve">
+    <value>رایانامه</value>
+  </data>
+  <data name="SignUpModel_Password" xml:space="preserve">
+    <value>اسم شب</value>
+  </data>
+  <data name="SignUpModel_PasswordConfirmation" xml:space="preserve">
+    <value>اسم شب (دوباره)</value>
+  </data>
+  <data name="SubscriptionEntity_CancelDateUtc" xml:space="preserve">
+    <value>تاریخ انصراف</value>
+  </data>
+  <data name="SubscriptionEntity_ConfirmDateUtc" xml:space="preserve">
+    <value>تاریخ تائید</value>
+  </data>
+  <data name="SubscriptionEntity_Email" xml:space="preserve">
+    <value>رایانامه</value>
+  </data>
+  <data name="SubscriptionEntity_Status" xml:space="preserve">
+    <value>وضعیت</value>
+  </data>
+  <data name="SubscriptionEntity_SubscribDateUtc" xml:space="preserve">
+    <value>تاریخ ثبت درخواست</value>
+  </data>
+  <data name="SubscriptionStatus_Cancelled" xml:space="preserve">
+    <value>انصرافی</value>
+  </data>
+  <data name="SubscriptionStatus_ConfirmationSent" xml:space="preserve">
+    <value>تائیدیه ارسال شده</value>
+  </data>
+  <data name="SubscriptionStatus_Confirmed" xml:space="preserve">
+    <value>تائید شده</value>
+  </data>
+  <data name="SubscriptionStatus_Pending" xml:space="preserve">
+    <value>معلق</value>
+  </data>
+  <data name="UserAttributeEntity_User" xml:space="preserve">
+    <value>کاربر</value>
+  </data>
+  <data name="UserEntity_Email" xml:space="preserve">
+    <value>رایانامه</value>
+  </data>
+</root>

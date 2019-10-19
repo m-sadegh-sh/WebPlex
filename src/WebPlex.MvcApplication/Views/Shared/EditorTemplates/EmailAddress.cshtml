@@ -1,0 +1,16 @@
+﻿@model string
+
+@{
+	var errorMessage = Html.ValidationMessageFor(model => model).ToHtmlString();
+	var hasError = errorMessage.Contains(HtmlHelper.ValidationMessageCssClassName);
+	var error = hasError ? "error" : null;
+}
+
+<div class="control-group @error">
+	@Html.TextBoxFor(model => model, new {
+			placeholder = Html.DisplayNameFor(model => model),
+			@class = "input-block-level ltr-compatibility-enabled",
+			autocomplete = "off"
+	})
+	@Html.Raw(errorMessage.Replace("class=\"", string.Format("class=\"help-inline {0} ", hasError ? "" : "hidden")))
+</div>

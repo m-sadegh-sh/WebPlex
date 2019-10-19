@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Authorization_InvalidGroup" xml:space="preserve">
+    <value>گروهی که انتخاب کردی مجاز نیست!</value>
+  </data>
+  <data name="Authorization_InvalidPermission" xml:space="preserve">
+    <value>پرمیشنی که انتخاب کردی مجاز نیست!</value>
+  </data>
+  <data name="Authorization_InvalidRole" xml:space="preserve">
+    <value>نقشی که انتخاب کردی مجاز نیست!</value>
+  </data>
+  <data name="Authorization_InvalidUser" xml:space="preserve">
+    <value>کاربری که انتخاب کردی مجاز نیست!</value>
+  </data>
+  <data name="Common_ActionFailed" xml:space="preserve">
+    <value>توی روند اجرای درخواستت مشکلی رخ داده!</value>
+  </data>
+  <data name="Common_ActionSucceded" xml:space="preserve">
+    <value>درخواستت با موفقیت انجام شد.</value>
+  </data>
+  <data name="Common_DeleteConfirmation" xml:space="preserve">
+    <value>جدا می خوای پاکش کنی؟ دیگه بر نمی گرده ها!</value>
+  </data>
+  <data name="Common_DeleteFailed" xml:space="preserve">
+    <value>نشد که حذف شه :D آخیش!</value>
+  </data>
+  <data name="Common_DeleteSucceded" xml:space="preserve">
+    <value>حذف شد! حالا راحت شدی؟</value>
+  </data>
+  <data name="Common_NullEntity" xml:space="preserve">
+    <value>من با هیچی (null) چیکار کنم؛ ها؟ نه خودت بگو!</value>
+  </data>
+  <data name="Common_SaveFailed" xml:space="preserve">
+    <value>چیزی ذخیره نشد؛ حتما یه جای کارت میلنگه!</value>
+  </data>
+  <data name="Common_SaveSucceded" xml:space="preserve">
+    <value>ذخیره شد.</value>
+  </data>
+  <data name="Common_UnknownEntity" xml:space="preserve">
+    <value>فکر کنم یه خورده دیر جنبیدی؛ قبلا حذف شده!</value>
+  </data>
+  <data name="Configuration_DefaultSettingsSucceeded" xml:space="preserve">
+    <value>تنظیمات اولیه انجام شد.</value>
+  </data>
+  <data name="Configuration_DefaultUserSucceeded" xml:space="preserve">
+    <value>کاربر پیشفرص ایجاد شد.</value>
+  </data>
+  <data name="Contact_SendMessageFailed" xml:space="preserve">
+    <value>مثل اینکه توی ارسال پیامتون مشکلی پیش اومده! پوزش مارو بپذیرین و مجددا تلاش کنید. باز هم بخاطر مشکل پیش اومده متاسفیم.</value>
+  </data>
+  <data name="Contact_SendMessageSucceded" xml:space="preserve">
+    <value>پیامتون رو دریافت کردیم. لطفا منتظر پاسخ ما باشین. سعی می کنیم در اسرع وقت باهاتون تماس بگیریم. مرسی :)</value>
+  </data>
+  <data name="EmailAccounts_AtLeastOneEmailAccountRequired" xml:space="preserve">
+    <value>حداقل یدونه "حساب ایمیل" نگه دار! خبر نامه هارو با چی باید بفرستیم؟</value>
+  </data>
+  <data name="Errors_Error403" xml:space="preserve">
+    <value>شیطونی نکن!</value>
+  </data>
+  <data name="Errors_Error403Description" xml:space="preserve">
+    <value>هر چند به چهره‌ت نمیخوره ولی یا شیطونی کردی یا می خوای بکنی؛ نکن برادر/خواهر من نکن!</value>
+  </data>
+  <data name="Errors_Error404" xml:space="preserve">
+    <value>گشتیم نبود...</value>
+  </data>
+  <data name="Errors_Error404Description" xml:space="preserve">
+    <value>اون چیزی که دنبالشین مثل اینکه وجود خارجی نداره؛ یا شایدم فعلا در دسترس نیست! اگر اینطور نیست لطفا باهامون تماس بگیرید.</value>
+  </data>
+  <data name="Errors_Error500" xml:space="preserve">
+    <value>اوخخخ!</value>
+  </data>
+  <data name="Errors_Error500Description" xml:space="preserve">
+    <value>مثل اینکه نرم افزار ما نمی تونه درخواستتون رو پردازش کنه :( اما نگران نباشید ما همه اون چیزی که قراره توی رفع این نقص کمک کنه رو ذخیره کردیم. حالا درخواست می کنیم که لطفا دوباره تلاش کنید.</value>
+  </data>
+  <data name="Errors_Error503" xml:space="preserve">
+    <value>برمیگردیم...</value>
+  </data>
+  <data name="Errors_Error503Description" xml:space="preserve">
+    <value>در حال حاضر امکان سرویس دهی رو نداریم. لطفا زودی برگردین ;)</value>
+  </data>
+  <data name="Logging_LogsWithThisTypeOfSeverityIsDisabled" xml:space="preserve">
+    <value>این نوع سوابق ارزش ثبت شدن رو ندارن!</value>
+  </data>
+  <data name="Logging_ThreadAbortExceptionIsNotAllowedToBeLogged" xml:space="preserve">
+    <value>لزومی به ثبت استثنای ThreadAbortException وجود نداره.</value>
+  </data>
+  <data name="Membership_AccountDeleteSucceded" xml:space="preserve">
+    <value>حساب مورد نظر حذف شد.</value>
+  </data>
+  <data name="Membership_AccountLocked" xml:space="preserve">
+    <value>حسابت لاک شده؛ حتما یکی خواسته بدون اجازت وارد حساب کاربریت بشه! جان من، این تن بمیره، بیشترمراقب باش؛ گذرواژه‌ت رو هم هر چند هفته عوض کن خواهشن!</value>
+  </data>
+  <data name="Membership_AccountNotFound" xml:space="preserve">
+    <value>حسابی پیدا نشد!</value>
+  </data>
+  <data name="Membership_ConfirmedAccountRequired" xml:space="preserve">
+    <value>حسابت هنوز فعال نشده! موشکل داری؟ لینک تماس با من به اون گنده‌ای؛ اوناهاش!</value>
+  </data>
+  <data name="Membership_ExternalSignInFailed" xml:space="preserve">
+    <value>یه مشکلی وجود داره؛ نمی تونیم فعلا وارد شیم. دوباره تلاش کن؛ اگر بازم به مشکل خوردی حتما خبرمون کن.</value>
+  </data>
+  <data name="Membership_ExternalSignInSucceeded" xml:space="preserve">
+    <value>با موفقیت به حسابت وارد شدی.</value>
+  </data>
+  <data name="Membership_InvalidEmail" xml:space="preserve">
+    <value>رایانامت رو درست وارد نکردی!</value>
+  </data>
+  <data name="Membership_InvalidEmailOrPassword" xml:space="preserve">
+    <value>یا رایانامت رو درست وارد نکردی یا اسم شب رو!</value>
+  </data>
+  <data name="Membership_InvalidOldPassword" xml:space="preserve">
+    <value>اسم شب قبلیت این نبود که!</value>
+  </data>
+  <data name="Membership_LocalAccountRequired" xml:space="preserve">
+    <value>نمی تونی قبل از اینکه یه اکانت داخلی بسازی گذرواژه‌ت رو ریست کنی یا تغییرش بدی!</value>
+  </data>
+  <data name="Membership_PasswordAlreadySet" xml:space="preserve">
+    <value>گذرواژه‌ت قبلا ثبت کردی!</value>
+  </data>
+  <data name="Membership_PasswordChangeSucceded" xml:space="preserve">
+    <value>گذرواژه‌ت با موفقیت تغییر کرد.</value>
+  </data>
+  <data name="Membership_PasswordResetSucceded" xml:space="preserve">
+    <value>یه رایانامه واست می فرستیم که توش یه لینک برای تغییر گذرواژت وجود داره؛ لطفا شکیبا باش.</value>
+  </data>
+  <data name="Membership_PasswordSetSucceded" xml:space="preserve">
+    <value>گذرواژه‌ت رو با موفقیت ثبت کردی.</value>
+  </data>
+  <data name="Membership_RelatedProviderRequired" xml:space="preserve">
+    <value>این حساب مربوط به تو نیست!</value>
+  </data>
+  <data name="Membership_SignInSucceded" xml:space="preserve">
+    <value>هورااا! خوش اومدی.</value>
+  </data>
+  <data name="Membership_SignOutSucceded" xml:space="preserve">
+    <value>رفتی؟</value>
+  </data>
+  <data name="Membership_SignUpSucceded" xml:space="preserve">
+    <value>سلام!!! به جمع‌مون خوش اومدی.</value>
+  </data>
+  <data name="Roles_GuestsRoleNotFound" xml:space="preserve">
+    <value>نقش "مهمان" پیدا نشد!</value>
+  </data>
+  <data name="Roles_RegistetedRoleNotFound" xml:space="preserve">
+    <value>نقش "ثبت‌نام شده" پیدا نشد!</value>
+  </data>
+  <data name="Roles_SystemRole" xml:space="preserve">
+    <value>چی؟ نقش "سیستمی"؟ میخوای حذفش کنی؟ بترس از این کارت بترس!</value>
+  </data>
+  <data name="Settings_NotSupportedValueType" xml:space="preserve">
+    <value>خوب این چیه دادی من ذخیرش کنم؟ نمی تونم که؛ سخته جون تو!</value>
+  </data>
+  <data name="UserAttributes_NotSupportedValueType" xml:space="preserve">
+    <value>خوب این چیه دادی من ذخیرش کنم؟ نمی تونم که؛ سخته جون تو!</value>
+  </data>
+  <data name="Validation_DuplicateValue" xml:space="preserve">
+    <value>"{0}" واسه "{1}" تکراریه! عوضش می کنی؟</value>
+  </data>
+  <data name="Validation_DuplicateValues" xml:space="preserve">
+    <value>ترکیب "{0}" به ترتیب برای "{1}" اشاره به یک رکورد تکراری می کنه! عوضشون می کنی؟</value>
+  </data>
+  <data name="Validation_InvalidCultureCode" xml:space="preserve">
+    <value>مطمئنی "{0}" رو درست وارد کردی؟ (مثلا: fa-IR)</value>
+  </data>
+  <data name="Validation_InvalidDateTime" xml:space="preserve">
+    <value>مطمئنی "{0}" رو درست وارد کردی؟ (مثلا: 1392/1/1)</value>
+  </data>
+  <data name="Validation_InvalidEmail" xml:space="preserve">
+    <value>مطمئنی "{0}" رو درست وارد کردی؟ (با www شروع نمیشه، مثلا: me@gmail.com)</value>
+  </data>
+  <data name="Validation_InvalidIpAddress" xml:space="preserve">
+    <value>مطمئنی "{0}" رو درست وارد کردی؟ (مثلا: 192.168.1.1)</value>
+  </data>
+  <data name="Validation_InvalidMaxLength" xml:space="preserve">
+    <value>طول "{0}" از {1} حرف بیشتر شده! کمش کن چه خبرته؟</value>
+  </data>
+  <data name="Validation_InvalidMaxValue" xml:space="preserve">
+    <value>"{0}" از {1} بیشتر شده! کمش کن چه خبرته؟</value>
+  </data>
+  <data name="Validation_InvalidMinLength" xml:space="preserve">
+    <value>طول "{0}" کمتر از {1} حرف شده! خصیص بازی در آوردی؟</value>
+  </data>
+  <data name="Validation_InvalidMinValue" xml:space="preserve">
+    <value>"{0}" کمتر از {1}ست! جون تو کمتر راه نداره!</value>
+  </data>
+  <data name="Validation_InvalidParameter" xml:space="preserve">
+    <value>توی درخواستتون مقادیر غیر معتبر پیدا شده بود؛ ما در نظر نگرفتیم نگران نباشید.</value>
+  </data>
+  <data name="Validation_InvalidRangeLength" xml:space="preserve">
+    <value>طول "{0}" باید بین {1} و {2} حرف باشه! همینطوره؟</value>
+  </data>
+  <data name="Validation_InvalidRangeValue" xml:space="preserve">
+    <value>"{0}" باید بین {1} و {2} باشه! همینطوره؟</value>
+  </data>
+  <data name="Validation_InvalidSlug" xml:space="preserve">
+    <value>مطمئنی "{0}" رو درست وارد کردی؟ (فقط میتونه شامل کاراکترهای A تا Z، اعداد و - باشه! مثلا: my-first-entry)</value>
+  </data>
+  <data name="Validation_InvalidTimeZoneId" xml:space="preserve">
+    <value>مطمئنی "{0}" رو درست وارد کردی؟ (مثلا: Iran Standard Time)</value>
+  </data>
+  <data name="Validation_InvalidUrl" xml:space="preserve">
+    <value>مطمئنی "{0}" رو درست وارد کردی؟ (مثلا: http://webplex.ir/)</value>
+  </data>
+  <data name="Validation_NotMatched" xml:space="preserve">
+    <value>"{0}" و "{1}" با هم یکی نیستن!</value>
+  </data>
+  <data name="Validation_PositiveNumericRequired" xml:space="preserve">
+    <value>برای "{0}" یه مقدار عددی و مثبت وارد کن!</value>
+  </data>
+  <data name="Validation_Required" xml:space="preserve">
+    <value>این رو وارد نکردی!</value>
+  </data>
+</root>

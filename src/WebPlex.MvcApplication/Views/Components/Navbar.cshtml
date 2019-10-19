@@ -1,0 +1,25 @@
+﻿@model NavbarComponent
+
+@helper RenderItem(NavItemComponent item) { @Html.Action(T4Routes.Components.NavItem(item)) }
+
+<div class="navbar">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			@Html.ActionLink(Views.Title_Root, T4Routes.Home.Index(), new {
+					@class = "brand hidden-desktop"
+			})
+			<div class="nav-collapse collapse navbar-responsive-collapse">
+				<ul class="nav">
+					@foreach (var item in Model.Items) {
+						@RenderItem(item)
+					}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

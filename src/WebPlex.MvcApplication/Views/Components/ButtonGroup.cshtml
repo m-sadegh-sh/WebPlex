@@ -1,0 +1,9 @@
+﻿@model ButtonGroupComponent
+
+@helper RenderItem(ButtonComponent item) { @Html.Action(T4Routes.Components.Button(item)) }
+
+<div @Model.WriteAttributes()>
+	@foreach (var button in Model) {
+		@RenderItem(button)
+	}
+</div>

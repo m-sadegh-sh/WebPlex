@@ -1,0 +1,9 @@
+﻿@model ButtonComponent
+
+@helper RenderItem(ButtonComponent item) {
+	<button @item.WriteAttributes()>
+		@item.Text
+	</button>
+}
+
+@RenderItem(Model)

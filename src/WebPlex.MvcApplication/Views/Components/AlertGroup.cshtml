@@ -1,0 +1,7 @@
+﻿@model AlertGroupComponent
+
+@helper RenderItem(AlertComponent item) { @Html.Action(T4Routes.Components.Alert(item)) }
+
+@foreach (var alert in Model) {
+	@RenderItem(alert)
+}

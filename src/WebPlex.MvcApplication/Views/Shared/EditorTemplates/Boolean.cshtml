@@ -1,0 +1,25 @@
+﻿@model bool?
+
+@{
+	var errorMessage = Html.ValidationMessageFor(model => model).ToHtmlString();
+	var hasError = errorMessage.Contains(HtmlHelper.ValidationMessageCssClassName);
+	var error = hasError ? "error" : null;
+}
+
+@if (ViewData.ModelMetadata.IsNullableValueType) {
+	<div class="control-group @error">
+		@Html.Action(T4Routes.Components.ButtonGroup(Html.ButtonGroup().RadioBox.Block.Buttons(items => {
+			                                                                                       items.Add.AddCssClass("disabled").Text(Html.DisplayNameFor(model => model));
+			                                                                                       items.Add.Warning.AddCssClassIf(Model.GetValueOrDefault(), "active").AddData("target", Html.IdFor(model => model)).Text(General.Boolean_True);
+			                                                                                       items.Add.Warning.AddCssClassIf(!Model.GetValueOrDefault(), "active").AddData("target", Html.IdFor(model => model)).Text(General.Boolean_False);
+		                                                                                       })))
+		@Html.HiddenFor(model => model)
+		@Html.Raw(errorMessage.Replace("class=\"", string.Format("class=\"help-inline {0} ", hasError ? "" : "hidden")))
+	
+	</div>
+} else {
+	<div class="control-group">
+		@Html.Action(T4Routes.Components.ButtonGroup(Html.ButtonGroup().Single.Block.Buttons(items => items.Add.Warning.Block.AddCssClassIf(Model.GetValueOrDefault(), "active").AddData("target", Html.IdFor(model => model).ToString()).Text(Html.DisplayNameFor(model => model).ToString()))))
+		@Html.HiddenFor(model => model)	
+	</div>
+}

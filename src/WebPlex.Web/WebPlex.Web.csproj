@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67368C99-7388-4252-8158-4A6D98DD19EF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebPlex.Web</RootNamespace>
+    <AssemblyName>WebPlex.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXssLibrary">
+      <HintPath>..\packages\AntiXSS.4.2.1\lib\net40\AntiXssLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime, Version=3.3.1.7705, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac, Version=3.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Autofac.3.0.2\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Configuration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Autofac.3.0.2\lib\net40\Autofac.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Autofac.Mvc4.3.0.0\lib\net40\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="CuttingEdge.Conditions">
+      <HintPath>..\packages\CuttingEdge.Conditions.1.2.0.0\lib\NET35\CuttingEdge.Conditions.dll</HintPath>
+    </Reference>
+    <Reference Include="dotless.Core">
+      <HintPath>..\packages\dotless.1.3.1.0\lib\dotless.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.3.0.13117\lib\net45-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.3.0.13117\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.3.0.13117\lib\net45-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.3.0.13117\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.3.0.13117\lib\net45-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.3.0.13117\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentSecurity">
+      <HintPath>..\packages\FluentSecurity.2.0.0-alpha4\lib\net40\FluentSecurity.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary">
+      <HintPath>..\packages\AntiXSS.4.2.1\lib\net40\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0\lib\net40\Microsoft.Web.WebPages.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.0-alpha1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="T4MVCExtensions, Version=3.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\T4MVCExtensions.3.6.5\lib\net40\T4MVCExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UniversalTypeConverter, Version=1.0.2.1, Culture=neutral, PublicKeyToken=2f110abc75e7903d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UniversalTypeConverter.1.0.2\lib\net40\UniversalTypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="Utilities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=27d5780f9da597f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\CraigsUtilityLibrary.3.3.0227\lib\net40\Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\lib\net40\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.2.0.20710.0\lib\net40\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Handlers\LessHandler.cs" />
+    <Compile Include="Modules\CheckForBannedIpsModule.cs" />
+    <Compile Include="Modules\CompressorModule.cs" />
+    <Compile Include="Modules\HeaderCleanerModule.cs" />
+    <Compile Include="Modules\UglyStream.cs" />
+    <Compile Include="Mvc\AreaRegistrationContextExtensions.cs" />
+    <Compile Include="Mvc\AdminRequiredAttribute.cs" />
+    <Compile Include="Mvc\ExternalLoginResult.cs" />
+    <Compile Include="Mvc\RouteCollectionExtensions.cs" />
+    <Compile Include="Mvc\CultureFilterAttribute.cs" />
+    <Compile Include="Mvc\TransactionalAttribute.cs" />
+    <Compile Include="Mvc\UI\Builders\AlertBuilder.cs" />
+    <Compile Include="Mvc\UI\Builders\BuilderBase.cs" />
+    <Compile Include="Mvc\UI\Builders\BreadcrumbBuilder.cs" />
+    <Compile Include="Mvc\UI\Builders\ChildrenExpression.cs" />
+    <Compile Include="Mvc\UI\Builders\AnchorBuilder.cs" />
+    <Compile Include="Mvc\UI\Builders\AlertGroupBuilder.cs" />
+    <Compile Include="Mvc\UI\Builders\BuilderCollection.cs" />
+    <Compile Include="Mvc\UI\Builders\ActionaleBuilderBase.cs" />
+    <Compile Include="Mvc\UI\Builders\ButtonBuilder.cs" />
+    <Compile Include="Mvc\UI\Builders\ButtonGroupBuilder.cs" />
+    <Compile Include="Mvc\UI\Builders\KeywordsBuilder.cs" />
+    <Compile Include="Mvc\UI\Builders\DescriptionBuilder.cs" />
+    <Compile Include="Mvc\UI\Builders\IBuilderCollection.cs" />
+    <Compile Include="Mvc\UI\Builders\NavItemBuilder.cs" />
+    <Compile Include="Mvc\UI\Builders\IBuilder.cs" />
+    <Compile Include="Mvc\UI\Builders\NavbarBuilder.cs" />
+    <Compile Include="Mvc\UI\Builders\BuilderCollectionBase.cs" />
+    <Compile Include="Mvc\UI\Builders\TitleBuilder.cs" />
+    <Compile Include="Mvc\UI\Components\ActionableComponentBase.cs" />
+    <Compile Include="Mvc\UI\Components\AlertComponent.cs" />
+    <Compile Include="Mvc\UI\Components\AnchorComponent.cs" />
+    <Compile Include="Mvc\UI\Components\AlertGroupComponent.cs" />
+    <Compile Include="Mvc\UI\Components\ButtonComponent.cs" />
+    <Compile Include="Mvc\UI\Components\ComponentBase.cs" />
+    <Compile Include="Mvc\UI\Components\ComponentList.cs" />
+    <Compile Include="Mvc\UI\Components\ButtonGroupComponent.cs" />
+    <Compile Include="Mvc\UI\Components\NavItemComponent.cs" />
+    <Compile Include="Mvc\UI\HtmlHelperExtensions.cs" />
+    <Compile Include="Mvc\UI\T4Extensions.cs" />
+    <Compile Include="Optimization\LessBundle.cs" />
+    <Compile Include="Routing\LowercaseRoute.cs" />
+    <Compile Include="Security\AuthorizationService.cs" />
+    <Compile Include="Security\PlexMembershipProvider.cs" />
+    <Compile Include="Security\FakePrincipal.cs" />
+    <Compile Include="Security\FluentlySecure\RolePolicy.cs" />
+    <Compile Include="Security\FluentlySecure\PermissionGroupPolicy.cs" />
+    <Compile Include="Security\FluentlySecure\PermissionPolicy.cs" />
+    <Compile Include="Security\FluentlySecure\PolicyBase.cs" />
+    <Compile Include="Security\FluentlySecure\PolicyContainerExtensions.cs" />
+    <Compile Include="Security\IAuthorizationService.cs" />
+    <Compile Include="Security\OAuthConfig.cs" />
+    <Compile Include="Security\PlexMembershipUser.cs" />
+    <Compile Include="Security\PlexSecurity.cs" />
+    <Compile Include="WebTypesModule.cs" />
+    <Compile Include="Extensions\HttpRequestExtensions.cs" />
+    <Compile Include="Modules\AppClosedModule.cs" />
+    <Compile Include="Modules\ErrorHandlingModule.cs" />
+    <Compile Include="Modules\ExpireCookiesModule.cs" />
+    <Compile Include="Modules\UrlNormalizerModule.cs" />
+    <Compile Include="Mvc\AuthorizeAttribute.cs" />
+    <Compile Include="Mvc\ActionExecutionHelpers.cs" />
+    <Compile Include="Mvc\CurrentMode.cs" />
+    <Compile Include="Mvc\DetectPostActionAttribute.cs" />
+    <Compile Include="Mvc\Feed\FeedResult.cs" />
+    <Compile Include="Mvc\Feed\RtlHelper.cs" />
+    <Compile Include="Mvc\FormValueExistsAttribute.cs" />
+    <Compile Include="Mvc\FormValueRequiredAttribute.cs" />
+    <Compile Include="Mvc\FormValueRequirement.cs" />
+    <Compile Include="Mvc\FormValuesToArrayAttribute.cs" />
+    <Compile Include="Mvc\Html\HtmlExtensions.cs" />
+    <Compile Include="Mvc\Html\SecurityExtensions.cs" />
+    <Compile Include="Mvc\MvcHtmlStringBuilder.cs" />
+    <Compile Include="Mvc\NotBindableAttribute.cs" />
+    <Compile Include="Mvc\NotCacheableAttribute.cs" />
+    <Compile Include="Mvc\PlexViewPage`.cs" />
+    <Compile Include="Mvc\PostAction.cs" />
+    <Compile Include="Mvc\UI\Components\IComponent.cs" />
+    <Compile Include="Mvc\UI\Components\BreadcrumbComponent.cs" />
+    <Compile Include="Mvc\UI\Components\DescriptionComponent.cs" />
+    <Compile Include="Mvc\UI\Components\KeywordsComponent.cs" />
+    <Compile Include="Mvc\UI\Components\NavbarComponent.cs" />
+    <Compile Include="Mvc\UI\Components\TitleComponent.cs" />
+    <Compile Include="Mvc\PlexViewPage.cs" />
+    <Compile Include="Mvc\UI\SelectListExtentions.cs" />
+    <Compile Include="Mvc\UI\ViewHelpers.cs" />
+    <Compile Include="Optimization\LessLogger.cs" />
+    <Compile Include="Optimization\LessTransform.cs" />
+    <Compile Include="Optimization\VirtualFileReader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\FakeIdentity.cs" />
+    <Compile Include="Utils\RemotePost.cs" />
+    <Compile Include="Routing\GuidConstraint.cs" />
+    <Compile Include="Routing\RequiredConstraint.cs" />
+    <Compile Include="Routing\NumericConstraint.cs" />
+    <Compile Include="Routing\RouteHelpers.cs" />
+    <Compile Include="Routing\SanitizeConstraint.cs" />
+    <Compile Include="WebHelper.cs" />
+    <Compile Include="WebWorkContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebPlex.Build\WebPlex.Build.csproj">
+      <Project>{F5BFA97A-EA4E-49BB-B03F-20FB68B747F9}</Project>
+      <Name>WebPlex.Build</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebPlex.Core\WebPlex.Core.csproj">
+      <Project>{5A60ECDA-CD1D-45CC-81EC-5E8936FF06CF}</Project>
+      <Name>WebPlex.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebPlex.Data\WebPlex.Data.csproj">
+      <Project>{AAA3DD0D-D403-4DCE-BA98-093433E3657A}</Project>
+      <Name>WebPlex.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebPlex.Resources\WebPlex.Resources.csproj">
+      <Project>{32B5801B-5191-4CBA-A40A-B6F33D969F1A}</Project>
+      <Name>WebPlex.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebPlex.Services\WebPlex.Services.csproj">
+      <Project>{E6DFCA7E-44D4-41A1-8CD2-DB770E974387}</Project>
+      <Name>WebPlex.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
